@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -117,7 +118,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #000000 !important;
 		}
 
 	strong, b {
@@ -1785,7 +1786,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #000000;
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1849,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #000000;
 		}
 
 	select {
@@ -1953,7 +1954,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: #000000;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2402,7 +2403,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #000000;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2618,7 +2619,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #000000;
 			color: #ffffff !important;
 		}
 
@@ -2626,14 +2627,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5ed0b1;
+				background-color: #c10505;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #39c29d;
+				background-color: #c10505;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2700,7 +2701,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		background: #000000;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2708,7 +2709,7 @@ input, select, textarea {
 		text-align: center;
 		top: 0;
 		width: 23em;
-		right: 0;
+		left: 0;
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2762,7 +2763,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			bottom: 0;
-			left: 0;
+			right: 0;
 			padding: 2em;
 			width: 100%;
 		}
@@ -2772,7 +2773,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #c10505;
 				}
 
 		#header > nav {
@@ -2789,7 +2790,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					/*border-top: solid 2px #c10505*/
 					display: block;
 					padding: 0;
 				}
@@ -2808,7 +2809,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #4acaa8 !important;
+							color: #000000 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2819,7 +2820,8 @@ input, select, textarea {
 
 	#wrapper {
 		background: #fff;
-		padding-right: 23em;
+		padding-left: 20em;
+		
 	}
 
 /* Main */
@@ -2910,7 +2912,7 @@ input, select, textarea {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1920px) {
 
 		/* Basic */
 
@@ -2927,7 +2929,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 20em;
+				padding-right: 0em;
 			}
 
 	}
@@ -3025,7 +3027,7 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				display: block;
 				height: 44px;
-				left: 0;
+				right: 0;
 				position: fixed;
 				top: 0;
 				width: 100%;
@@ -3076,7 +3078,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #000000;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
