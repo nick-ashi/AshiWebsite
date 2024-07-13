@@ -13,7 +13,17 @@
 		<script src="https://kit.fontawesome.com/9b88dc4e77.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload">
-
+		<button id="menuToggle" class="menu-toggle">Menu</button>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var menuToggle = document.getElementById('menuToggle');
+				var nav = document.getElementById('nav');
+		
+				menuToggle.addEventListener('click', function() {
+					nav.classList.toggle('show');
+				});
+			});
+		</script>
 		<!-- Header -->
 			<section id="header">
 				<header>
