@@ -122,16 +122,4 @@
             return 0;
         },
     });
-
-    // Menu toggle
-    document.addEventListener('DOMContentLoaded', function() {
-        var menuToggle = document.getElementById('menuToggle');
-        var header = document.getElementById('header');
-        var wrapper = document.getElementById('wrapper');
-
-        menuToggle.addEventListener('click', function() {
-            header.classList.toggle('hidden');
-            wrapper.classList.toggle('expanded');
-        });
-    });
 })(jQuery);
