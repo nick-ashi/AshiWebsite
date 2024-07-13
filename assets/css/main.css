@@ -3380,42 +3380,27 @@ input, select, textarea {
     }
 }
 
-/* Existing CSS content */
-
-/* Toggle button styling */
+/* Navigation menu styling for mobile */
 .menu-toggle {
-    display: none;
+    display: block;
     background-color: #333;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     z-index: 1000;
 }
 
-/* Navigation menu styling for mobile */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    #nav {
+    #header.hidden {
         display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        background-color: #333;
-        color: white;
-        padding: 10px;
-        z-index: 1000;
     }
 
-    #nav.show {
-        display: block;
+    #wrapper.expanded #main {
+        margin-left: 0;
+        width: 100%;
     }
 }

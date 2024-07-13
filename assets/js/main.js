@@ -126,10 +126,12 @@
     // Menu toggle
     document.addEventListener('DOMContentLoaded', function() {
         var menuToggle = document.getElementById('menuToggle');
-        var nav = document.getElementById('nav');
+        var header = document.getElementById('header');
+        var wrapper = document.getElementById('wrapper');
 
         menuToggle.addEventListener('click', function() {
-            nav.classList.toggle('show');
+            header.classList.toggle('hidden');
+            wrapper.classList.toggle('expanded');
         });
     });
 })(jQuery);
